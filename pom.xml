@@ -9,7 +9,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cg.expenseclaimdetailsmodule</groupId>
-	<artifactId>expense-claim-details-module</artifactId>
+	<artifactId>ExpenseClaimDetailsModule</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>ExpenseClaimDetailsModule</name>
