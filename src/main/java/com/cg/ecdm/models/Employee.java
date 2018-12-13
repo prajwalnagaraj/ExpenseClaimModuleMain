@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class Employee {
 
-	private String employeeId;
+	private int employeeId;
 
 	private String employeeName;
 	
@@ -30,7 +30,7 @@ public class Employee {
 	public Employee() {
 	}
 
-	public Employee(String employeeId, String employeeName, String employeePan,
+	public Employee(int employeeId, String employeeName, String employeePan,
 			String employeeDesignation, String employeeDomain,
 			Date employeeDOJ, Date employeeDOB, double employeeSalary,
 			String employeeMailId, String employeePassword) {
@@ -47,11 +47,11 @@ public class Employee {
 		this.employeePassword = employeePassword;
 	}
 
-	public String getEmployeeId() {
+	public int getEmployeeId() {
 		return employeeId;
 	}
 
-	public void setEmployeeId(String employeeId) {
+	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
 

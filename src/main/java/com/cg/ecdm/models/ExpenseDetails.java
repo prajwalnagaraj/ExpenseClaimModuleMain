@@ -1,11 +1,25 @@
 package com.cg.ecdm.models;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Document(collection = "expensedetails")
 public class ExpenseDetails {
+	@Id
 	private int expenseCode;
 
+	@NotNull
+	@Field(value = "expense_type")
+	@Size(min=3,max=15, message="Name should have atleast 3 characters")
 	private String expenseType;
 
+	@NotNull
+	@Field(value = "expense_description")
+	@Size(min=15,max=100, message="Name should have atleast 15 characters")
 	private String expenseDescription;
 	public int getExpenseCode() {
 		return expenseCode;
@@ -39,7 +53,6 @@ public class ExpenseDetails {
 		this.expenseDescription = expenseDescription;
 	}
 	public ExpenseDetails() {
-		super();
 	}
 	
 }
